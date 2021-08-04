@@ -669,3 +669,7 @@ img {
     opacity: 1;
     visibility: visible;
 }
+
+.portfolio__container {
+    overflow: initial;
+}
