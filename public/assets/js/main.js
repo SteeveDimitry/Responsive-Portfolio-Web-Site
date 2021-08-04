@@ -188,3 +188,37 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2800,
+    reset: true,
+})
+
+sr.reveal(``,{
+    origin: 'left',
+    interval: 100,
+    // duration: 5000,
+})
+
+sr.reveal(`.home__container,
+            .about__container,
+            .skills__container,
+            .qualification__container,
+            .services__container,
+            .portfolio__container,
+            .project__container,
+            .testimonial__container,
+            .contact__container`,{
+    origin: 'top',
+})
+
+sr.reveal(`.footer__title,
+            .footer__subtitle,
+            .footer__links,
+            .footer__socials`,{
+    origin: 'left',
+    interval: 100,
+})
+
+sr.reveal(`.footer__copy`)
