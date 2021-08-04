@@ -42,3 +42,18 @@ function toggleSkills(){
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
+
+const tabs = document.querySelectorAll('[data-target]'),
+        tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click',  ()=>{
+        const target = document.querySelector(tab.CDATA_SECTION_NODE.target)
+
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('qualification__active')
+        })
+
+        target
+    })
+})
