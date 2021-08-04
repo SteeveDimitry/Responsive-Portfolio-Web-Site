@@ -22,3 +22,7 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+const skillsContent = document.getElementsByName('skills__content'),
+        skillsHeader = document.querySelectorAll('skills__header')
