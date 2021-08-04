@@ -1,3 +1,5 @@
+// Nav toggle
+
 const navMenu = document.getElementById('nav-menu'),
         navToggle = document.getElementById('nav-toggle'),
         navClose = document.getElementById('nav-close')
@@ -23,6 +25,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+// Skills content
 
 const skillsContent = document.getElementsByClassName('skills__content'),
         skillsHeader = document.querySelectorAll('.skills__header')
@@ -43,17 +46,25 @@ skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
 
+// Qualification tabs
+
 const tabs = document.querySelectorAll('[data-target]'),
         tabContents = document.querySelectorAll('[data-content]')
 
 tabs.forEach(tab =>{
     tab.addEventListener('click',  ()=>{
-        const target = document.querySelector(tab.CDATA_SECTION_NODE.target)
+        const target = document.querySelector(tab.dataset.target)
 
         tabContents.forEach(tabContent =>{
             tabContent.classList.remove('qualification__active')
         })
 
-        target
+        target.classList.add('qualification__active')
+
+        tabs.forEach(tab =>{
+            tab.classList.remove('qualification__active')
+        })
+
+        tab.classList.add('qualification__active')
     })
 })
