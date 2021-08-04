@@ -1048,4 +1048,36 @@ img {
         margin-right: 0;
         margin-bottom: var(--mb-0-25);
     }
+
+    .testimonial__data,
+    .testimonial__description {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .home__content {
+        grid-template-columns: max-content 1fr 1fr;
+    }
+
+    .home__data {
+        grid-column: initial;
+    }
+
+    .home__img {
+        order: 1;
+        justify-self: center;
+    }
+
+    .about__container,
+    .skills__container,
+    .portfolio__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qualification__sections {
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
 }
