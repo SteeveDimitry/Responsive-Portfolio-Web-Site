@@ -221,3 +221,4 @@ sr.reveal(`.footer__title,
     origin: 'bottom',
     interval: 100,
 })
+
