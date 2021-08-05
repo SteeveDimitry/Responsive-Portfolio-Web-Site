@@ -1054,6 +1054,11 @@ img {
     background-color: var(--text-color-light);
 }
 
+::selection {
+    background: var(--first-color);
+    color: #f1f2f3;
+}
+
 @media screen and (max-width: 350px) {
     .container {
         margin-left: var(--mb-1);
