@@ -220,5 +220,3 @@ sr.reveal(`.footer__title,
     origin: 'left',
     interval: 100,
 })
-
-sr.reveal(`.footer__copy`)
