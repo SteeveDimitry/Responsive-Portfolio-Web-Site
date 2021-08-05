@@ -209,7 +209,8 @@ sr.reveal(`.home__container,
             .portfolio__container,
             .project__container,
             .testimonial__container,
-            .contact__container`,{
+            .contact__container,
+            .footer__copy`,{
     origin: 'top',
 })
 
