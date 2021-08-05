@@ -209,15 +209,15 @@ sr.reveal(`.home__container,
             .portfolio__container,
             .project__container,
             .testimonial__container,
-            .contact__container,
-            .footer__copy`,{
+            .contact__container`,{
     origin: 'top',
 })
 
 sr.reveal(`.footer__title,
             .footer__subtitle,
             .footer__links,
-            .footer__socials`,{
-    origin: 'left',
+            .footer__socials,
+            .footer__copy`,{
+    origin: 'bottom',
     interval: 100,
 })
