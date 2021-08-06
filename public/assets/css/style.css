@@ -462,6 +462,7 @@ img {
 .skills__list {
     row-gap: 1.5rem;
     padding-left: 2.7rem;
+    transition: .4s;
 }
 
 .skills__titles {
@@ -573,6 +574,7 @@ img {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
+    /* transition: .4s; */
 }
 
 .qualification__title {
