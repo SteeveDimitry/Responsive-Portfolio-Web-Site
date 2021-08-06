@@ -97,13 +97,14 @@ modalCloses.forEach((modalCloses) => {
 
 let swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,
+    autoplay: true,
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     pagination: {
-      el: '.swiper-pagination',
+        el: '.swiper-pagination',
       clickable: true,
     },
 });
@@ -112,6 +113,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
 
 let swiperTestimonial = new Swiper('.testimonial__container', {
     loop: true,
+    autoplay: true,
     grabCursor: true,
     spaceBetween: 48,
     
