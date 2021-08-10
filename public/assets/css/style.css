@@ -627,6 +627,7 @@ img {
 .qualification__calendar {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
+    font-style: italic;
 }
 
 .qualification__rounder {
