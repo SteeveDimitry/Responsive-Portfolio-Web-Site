@@ -105,9 +105,7 @@ body.dark-theme {
 
 /* ********************************* Base ********************************* */
 
-*,
-::after,
-::before {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -141,12 +139,13 @@ a {
     text-decoration: none;
 }
 
-/* ********************************* Global styling ********************************* */
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+/* ********************************* Global styling ********************************* */
 
 .section {
     padding: 2rem 0 4rem;
