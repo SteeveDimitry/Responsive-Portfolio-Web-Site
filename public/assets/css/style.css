@@ -551,6 +551,10 @@ img {
     width: 75%;
 }
 
+.skills__java {
+    width: 35%;
+}
+
 .skills__figma {
     width: 90%;
 }
