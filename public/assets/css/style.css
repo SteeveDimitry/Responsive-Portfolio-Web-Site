@@ -308,7 +308,8 @@ img {
 }
 
 .home__blob-img {
-    width: 170px;
+    /* width: 170px; */
+    width: 130%;
 }
 
 .home__data {
@@ -340,7 +341,7 @@ img {
 }
 
 .home__scroll-button:hover {
-    transform: translateY(0.25rem);
+    transform: translateY(.25rem);
 }
 
 .home__scroll-mouse {
