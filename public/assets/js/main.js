@@ -200,19 +200,18 @@ const sr = ScrollReveal({
 sr.reveal(``,{
     origin: 'left',
     interval: 100,
-    // duration: 5000,
 })
 
 sr.reveal(`.home__container,
             .about__container,
             .skills__container,
             .qualification__container,
-            .services__container,
             .portfolio__container,
             .project__container,
             .testimonial__container,
             .contact__container`,{
     origin: 'top',
+    interval: 100,
 })
 
 sr.reveal(`.footer__title,
