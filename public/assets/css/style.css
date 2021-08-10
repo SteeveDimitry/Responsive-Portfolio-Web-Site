@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
+
+    /* ********************************* Header-height ********************************* */
     --header-height: 3rem;
+
+    /* ********************************* Hue color ********************************* */
 
     /* Change favorite color */
     --hue-color: 230;
     /*Purple 250 - Green 142 - yellow 64 - Blue 230 - Pink 340*/
+    /* ********************************* BG/C ********************************* */
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -23,6 +28,8 @@
 
     --body-font: 'Poppins', sans-serif;
 
+    /* ********************************* Font-size ********************************* */
+
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
@@ -35,6 +42,8 @@
     --font-medium: 500;
     --font-semi-bold: 600;
 
+    /* ********************************* Margin-v ********************************* */
+
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -44,6 +53,8 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
+
+    /* ********************************* Z-index ********************************* */
 
     --z-tooltip: 10;
     --z-fixed: 100;
@@ -63,12 +74,13 @@
     }
 }
 
+/* ********************************* Dark Theme ********************************* */
+
 body.dark-theme {
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 29%, 16%);
-    --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --body-color: hsl(var(--hue-color), 28%, 12%);
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
@@ -90,6 +102,8 @@ body.dark-theme {
 .change-theme:hover {
     color: var(--first-color);
 }
+
+/* ********************************* Base ********************************* */
 
 * {
     box-sizing: border-box;
@@ -125,6 +139,8 @@ a {
     text-decoration: none;
 }
 
+/* ********************************* Global styling ********************************* */
+
 img {
     max-width: 100%;
     height: auto;
@@ -159,6 +175,8 @@ img {
     display: grid;
     gap: 1.5rem;
 }
+
+/* ********************************* Header ********************************* */
 
 .header {
     width: 100%;
@@ -257,6 +275,8 @@ img {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
+/* ********************************* Home ********************************* */
+
 .home__container {
     gap: 1rem;
 }
@@ -338,6 +358,8 @@ img {
     font-size: 1.25rem;
 }
 
+/* ********************************* Button ********************************* */
+
 .button {
     display: inline-block;
     background-color: var(--first-color);
@@ -386,6 +408,8 @@ img {
     color: var(--first-color-alt);
 }
 
+/* ********************************* About ********************************* */
+
 .about__img {
     width: 200px;
     border-radius: .5rem;
@@ -400,7 +424,7 @@ img {
 
 .about__info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -424,6 +448,8 @@ img {
     display: flex;
     justify-content: center;
 }
+
+/* ********************************* Skills ********************************* */
 
 .skills__container {
     row-gap: 0;
@@ -536,6 +562,14 @@ img {
     width: 85%;
 }
 
+.skills__unreal {
+    width: 70%;
+}
+
+.skills__unity {
+    width: 65%;
+}
+
 .skills__close .skills__list {
     height: 0;
     overflow: hidden;
@@ -549,6 +583,8 @@ img {
 .skills__open .skills__arrow {
     transform: rotate(-180deg);
 }
+
+/* ********************************* Qualification ********************************* */
 
 .qualification__tabs {
     display: flex;
@@ -620,6 +656,8 @@ img {
 .qualification__button.qualification__active {
     color: var(--first-color);
 }
+
+/* ********************************* Services ********************************* */
 
 .services__container {
     gap: 1.5rem;
@@ -718,6 +756,8 @@ img {
     visibility: visible;
 }
 
+/* ********************************* Portfolio ********************************* */
+
 .portfolio__container {
     overflow: initial;
 }
@@ -777,6 +817,8 @@ img {
     outline: none;
 }
 
+/* ********************************* Project In Mind ********************************* */
+
 .project {
     text-align: center;
 }
@@ -804,6 +846,8 @@ img {
     width: 232px;
     justify-self: center;
 }
+
+/* ********************************* Testimonial ********************************* */
 
 .testimonial__data,
 .testimonial__header {
