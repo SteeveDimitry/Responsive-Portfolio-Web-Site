@@ -888,6 +888,8 @@ img {
     bottom: 0;
 }
 
+/* ********************************* Contact ********************************* */
+
 .contact__container {
     row-gap: 3rem;
 }
@@ -940,6 +942,8 @@ img {
 .contact__input::-webkit-scrollbar {
     width: 0;
 }
+
+/* ********************************* Footer ********************************* */
 
 .footer {
     padding-top: 2rem;
